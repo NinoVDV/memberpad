@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@keyframes ani {
+    33% { -webkit-transform: rotate(120deg)}
+    66% { -webkit-transform: rotate(240deg)}
+    100% { -webkit-transform: rotate(360deg)}
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #6AB5BB;
+  font-family: 'Karla', sans-serif;
+}
+
+#checkDiv{
+  text-align: center;
+  padding-top: 300px;
+}
+
+#message{
+  text-align: center;
+  color: darkred;
+}
+.wrapper{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navigation{
+  width: 100%;
+  position: absolute;
+}
+
+.navigation ul li{
+  list-style-type: none;
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  margin: 14px 0 0 30px;
+}
+
+.navigation2{
+  width: 100%;
+  position: absolute;
+}
+
+.navigation2 ul li{
+  list-style-type: none;
+  float: left;
+  padding: 10px;
+  font-size: 30px;
+  margin: 80px 0 0 30px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation2 ul li a{
+    text-decoration: none;
+    color: black;
+    max-width: 100%;
+}
+
+.navigation2 ul li a:hover{
+  color: #393131;
+}
+
+.mainDiv{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 225px;
+}
+
+.titleBox{
+  text-align: center;
+  padding-top: 225px;
+}
+.formBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.titleLogo{
+  width: 100%;
+  text-align: center;
+}
+
+#title{
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+#slogan{
+  font-size: 20px;
+  color: #302929;
+}
+#logoImage{
+  width: 150px;
+  animation: ani 10s ease-in-out infinite;
+}
+
+#smallerFont{
+  font-size: 22px;
+}
+
+#logoImage2{
+  margin: -40px 0 0 0;
+  width: 125px;
+  animation: ani 10s ease-in-out infinite;
+}
+
+@media screen and (max-width: 768px){
+  #title{
+    font-size: 13vw;
+  }
+
+  #slogan{
+    font-size: 2.6vw;
+  }
+
+  #logoImage{
+    width: 19.5vw;
+  }
+
+  .navigation ul li{
+    margin: 14px 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .navigation ul li{
+    margin: 14px 0 0 5px;
+  }
+
+  .titleBox{
+    text-align: center;
+    padding-top: 160px;
+  }
+}
